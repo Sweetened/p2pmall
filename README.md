@@ -7,3 +7,4 @@ init
 1. git checkout https://github.com/Sweetened/p2pmall.git
 2. npm install
 3. npm start
+4. http://localhost:3000
