@@ -3,55 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/stylesheets/bootstrap/bootstrap.css"/>
     <link rel="stylesheet" href="/stylesheets/bootstrap/bootstrap-theme.css"/>
     <script src="/javascripts/jquery/jquery.js"></script>
     <script src="/javascripts/bootstrap/bootstrap.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">借贷商城</a>
-        </div>
+<div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">借贷商城</a>
+            </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">我要贷款</a></li>
-                <li><a href="#">我要投资</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        More
-                        <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <form class="navbar-form navbar-right" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">我要贷款</a></li>
+                    <li><a href="#">我要投资</a></li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
         </div>
+    </nav>
+    <div id="container">
+        <div class="row">
+            <div class="col-xs-9 col-sm-9">
+                <div class="pull-right visible-xs">
+                    <button name="button">test</button>
+                </div>
+                <div class="jumbotron">
+                    <h1>借贷商城</h1>
+
+                    <p>
+                        this is a demo
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-lg-4">
+                        <h2>陆金所</h2>
+
+                        <p>
+                            陆金所的简介
+                        </p>
+
+                        <p>
+                            <button name="buy" class="btn btn-primary" role="button">购买</button>
+                        </p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-4">
+                        <h2>人人贷</h2>
+
+                        <p>
+                            人人贷的简介
+                        </p>
+
+                        <p>
+                            <button name="buy" class="btn btn-primary" role="button">购买</button>
+                        </p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-4">
+                        <h2>天天贷</h2>
+
+                        <p>
+                            天天贷的简介
+                        </p>
+
+                        <p>
+                            <button name="buy" class="btn btn-primary" role="button">购买</button>
+                        </p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-4">
+                        <h2>陆金所</h2>
+
+                        <p>
+                            陆金所的简介
+                        </p>
+
+                        <p>
+                            <button name="buy" class="btn btn-primary" role="button">购买</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3" id="sidebar" role="navigation">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                    <a href="#" class="list-group-item">Link</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            <p>&copy; Company 2014</p>
+        </footer>
     </div>
-</nav>
+</div>
 </body>
 </html>
