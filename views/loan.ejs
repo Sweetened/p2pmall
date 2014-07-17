@@ -3,52 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title><%= title %></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/stylesheets/bootstrap/bootstrap.css"/>
-    <link rel="stylesheet" href="/stylesheets/bootstrap/bootstrap-theme.css"/>
-    <script src="/javascripts/jquery/jquery.js"></script>
-    <script src="/javascripts/bootstrap/bootstrap.js"></script>
+    <% include link.ejs %>
 </head>
 <body>
 <div class="container">
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">借贷商城</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="invest">我要投资</a></li>
-                    <li class="active"><a href="loan">我要贷款</a></li>
-                </ul>
-                <form class="navbar-form navbar-right" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-    <ol class="breadcrumb">
-        <li><a href="#">借贷商城</a></li>
-        <li class="active"><a href="loan">我要贷款</a></li>
-    </ol>
-    <div class="container">
+    <% include header.ejs %>
+    <div id="content" class="container">
         <div class="row">
-            <div class="col-xs-9 col-sm-9">
-                <div class="row ">
-                    <div class="">
+            <div class="col-xs-12 col-sm-12">
+                <div class="row">
+                    <div>
                         P2P平台:
                         <span class="label label-success">不限</span>
                         <span class="label label-success">陆金所</span>
@@ -172,11 +136,8 @@
 
             </div>
         </div>
-        <hr>
-        <footer>
-            <p>&copy; Company 2014</p>
-        </footer>
     </div>
+    <% include footer.ejs %>
 </div>
 </body>
 </html>
