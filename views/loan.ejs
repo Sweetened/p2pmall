@@ -1,153 +1,141 @@
-
-    <% include link.ejs %>
-
-<div class="container">
-    <% include header.ejs %>
-    <nav id="navigation" class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar">
-                <a class="navbar-brand" href="/">贷款商城</a>
-                <ul class="nav nav-pills pull-right">
-                    <li><a href="invest">我要投资</a></li>
-                    <li class="active"><a href="loan">我要贷款</a></li>
-                    <li><a href="loan">行业新闻</a></li>
-                </ul>
-            </div>
+<% include link.ejs %>
+<% include header.ejs %>
+<div class="row">
+    <div class="navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">贷款商城</a>
         </div>
-        <ol id="breadcrumb" class="breadcrumb">
-            <li><a href="#">借贷商城</a></li>
-            <li class="active"><a href="loan">我要贷款</a></li>
-        </ol>
-    </nav>
-    <div id="content" class="container">
+        <ul class="nav nav-pills pull-right">
+            <li><a href="invest">我要投资</a></li>
+            <li><a class="text-success" href="loan">我要贷款</a></li>
+            <li class="visible-lg"><a href="loan">行业新闻</a></li>
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-12 col-sm-12">
-                <div class="row">
-                    <div>
-                        P2P平台:
-                        <span class="label label-success">不限</span>
-                        <span class="label label-success">陆金所</span>
-                    </div>
-                    <div>
-                        贷款金额:
-                        <span class="label label-success">不限</span>
-                        <span class="label label-success">10000~50000</span>
-                    </div>
-                    <div>
-                        贷款期限:
-                        <span class="label label-success">不限</span>
-                        <span class="label label-success">1月~3月</span>
-                    </div>
-                    <div>
-                        职业身份:
-                        <span class="label label-success">不限</span>
-                        <span class="label label-success">企业</span>
-                        <span class="label label-success">个体户</span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6 col-sm-6 col-lg-4 bg-danger">
-                        <h3>陆金所</h3>
+            <ul class="list-unstyled">
+                <li>
+                    P2P平台:
+                    <span class="label label-success">不限</span>
+                    <span class="label label-success">陆金所</span>
+                </li>
+                <li>
+                    贷款金额:
+                    <span class="label label-success">不限</span>
+                    <span class="label label-success">10000~50000</span>
+                </li>
+                <li>
+                    贷款期限:
+                    <span class="label label-success">不限</span>
+                    <span class="label label-success">1月~3月</span>
+                </li>
+                <li>
+                    职业身份:
+                    <span class="label label-success">不限</span>
+                    <span class="label label-success">企业</span>
+                    <span class="label label-success">个体户</span>
+                </li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-6 col-sm-6 col-lg-4 bg-danger">
+                <h3>陆金所</h3>
 
-                        <p>富盈人生第14期</p>
+                <p>富盈人生第14期</p>
 
-                        <p>24个月</p>
+                <p>24个月</p>
 
-                        <p>
+                <p>
                             <span class="label label-danger">
                                 预期收益18%
                             </span>
-                        </p>
+                </p>
 
-                        <p>30，000元</p>
+                <p>30，000元</p>
 
-                        <p>
-                            <button name="buy" class="btn btn-primary btn-xs" role="button">购买</button>
-                        </p>
-                    </div>
-                    <div class="col-6 col-sm-6 col-lg-4 bg-success">
-                        <h3>人人贷</h3>
+                <p>
+                    <button name="buy" class="btn btn-primary btn-xs" role="button">购买</button>
+                </p>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-4 bg-success">
+                <h3>人人贷</h3>
 
-                        <p>资金周转</p>
+                <p>资金周转</p>
 
-                        <p>18个月</p>
+                <p>18个月</p>
 
-                        <p>
+                <p>
                             <span class="label label-danger">
                                 预期收益13.2%
                             </span>
-                        </p>
+                </p>
 
-                        <p>10,000元</p>
+                <p>10,000元</p>
 
-                        <p>
-                            <button name="buy" class="btn btn-primary btn-xs" role="button">购买</button>
-                        </p>
-                    </div>
-                    <div class="col-6 col-sm-6 col-lg-4 bg-warning">
-                        <h3>天天贷</h3>
+                <p>
+                    <button name="buy" class="btn btn-primary btn-xs" role="button">购买</button>
+                </p>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-4 bg-warning">
+                <h3>天天贷</h3>
 
-                        <p>月月盈</p>
+                <p>月月盈</p>
 
-                        <p>1个月</p>
+                <p>1个月</p>
 
-                        <p>
+                <p>
                             <span class="label label-danger">
                                 预期收益20%
                             </span>
-                        </p>
+                </p>
 
-                        <p>50,000元</p>
+                <p>50,000元</p>
 
-                        <p>
-                            <button name="buy" class="btn btn-primary btn-xs" role="button">购买</button>
-                        </p>
-                    </div>
-                    <div class="col-6 col-sm-6 col-lg-4 bg-warning">
-                        <h3>陆金所</h3>
+                <p>
+                    <button name="buy" class="btn btn-primary btn-xs" role="button">购买</button>
+                </p>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-4 bg-warning">
+                <h3>陆金所</h3>
 
-                        <p>季季盈</p>
+                <p>季季盈</p>
 
-                        <p>3个月</p>
+                <p>3个月</p>
 
-                        <p>
+                <p>
                             <span class="label label-info">
                                 预期收益15%
                             </span>
-                        </p>
+                </p>
 
-                        <p>100，000元</p>
+                <p>100，000元</p>
 
-                        <p>
-                            <button name="buy" class="btn btn-primary btn-xs" role="button">购买</button>
-                        </p>
-                    </div>
-                    <div class="col-6 col-sm-6 col-lg-4 bg-info">
-                        <h3>陆金所</h3>
+                <p>
+                    <button name="buy" class="btn btn-primary btn-xs" role="button">购买</button>
+                </p>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-4 bg-info">
+                <h3>陆金所</h3>
 
-                        <p>年年盈</p>
+                <p>年年盈</p>
 
-                        <p>12个月</p>
+                <p>12个月</p>
 
-                        <p>
+                <p>
                             <span class="label label-info">
                                 预期收益5%
                             </span>
-                        </p>
+                </p>
 
-                        <p>100，000元</p>
+                <p>100，000元</p>
 
-                        <p>
-                            <button name="buy" class="btn btn-primary btn-xs" role="button">购买</button>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-3 col-sm-3" id="sidebar" role="navigation">
-
+                <p>
+                    <button name="buy" class="btn btn-primary btn-xs" role="button">购买</button>
+                </p>
             </div>
         </div>
     </div>
-    <% include footer.ejs %>
 </div>
-
+<% include footer.ejs %>
