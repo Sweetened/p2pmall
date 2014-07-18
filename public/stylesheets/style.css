@@ -1,6 +1,26 @@
-.bg-mall{
+.bg-mall {
     background-color: #7a4376;
 }
-.invest-search-bg{
-     background-image: url("../images/banner.jpg");
- }
+
+.invest-search-bg {
+    background-image: url("../images/banner.jpg");
+}
+
+.nav-img {
+    background-image: url("../images/img.jpg");
+    background-repeat: no-repeat;
+    height: 88px;
+    width: 320px
+}
+
+.menu {
+    padding-top: 15px;
+}
+
+.logo-text {
+    width: 220px;
+}
+
+.logo-text > span {
+    padding-left: 80px;
+}

@@ -1,17 +1,31 @@
 <% include link.ejs %>
 <% include header.ejs %>
-<div class="row">
-    <div class="navbar-default">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="/">贷款商城</a>
+<nav class="navbar" role="navigation">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-offset-1">
+                <div class="navbar-header logo-text">
+                    <a class="navbar-brand" href="/">
+                        <img alt="logo" src="../images/logo.jpg"/>
+                        <span class="h2">贷款商城</span>
+                    </a>
+                    <span class="h6 text-muted">P2P一站通</span>
+                </div>
+            </div>
+            <div class="col-md-5 col-md-offset-1 menu">
+                <ul class="nav nav-pills h5" role="tablist">
+                    <li role="presentation"><a href="/">首页</a></li>
+                    <li role="presentation"><a href="invest">我要投资</a></li>
+                    <li role="presentation"><a href="loan">我要贷款</a></li>
+                    <li role="presentation" class="visible-lg"><a href="loan">行业新闻</a></li>
+                </ul>
+            </div>
+            <div class="nav-img col-md-offset-9 visible-lg visible-md">
+
+            </div>
         </div>
-        <ul class="nav nav-pills pull-right">
-            <li><a href="invest">我要投资</a></li>
-            <li><a href="loan">我要贷款</a></li>
-            <li class="visible-lg"><a href="loan">行业新闻</a></li>
-        </ul>
     </div>
-</div>
+</nav>
 <div class="row">
     <div class="container-fluid">
         <div class="row">
