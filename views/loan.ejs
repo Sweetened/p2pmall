@@ -1,32 +1,101 @@
 <% include link.ejs %>
 <% include header.ejs %>
-<nav class="navbar" role="navigation">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-offset-1">
-                <div class="navbar-header logo-text">
-                    <a class="navbar-brand" href="/">
-                        <img alt="logo" src="../images/logo.jpg"/>
-                        <span class="h2">贷款商城</span>
-                    </a>
-                    <span class="h6 text-muted">P2P一站通</span>
+<div class="row">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="row">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
+                    <div class="navbar-header logo-text">
+                        <a class="navbar-brand" href="/">
+                            <img alt="logo" src="../images/logo.jpg"/>
+                            <span class="h3">贷款商城</span>
+                        </a>
+                        <span class="h6 text-muted">P2P一站通</span>
+                    </div>
+
                 </div>
+                <div class="col-md-5 col-md-offset-1 menu collapse navbar-collapse" id="menu">
+                    <ul class="nav nav-pills navbar-nav h5" role="tablist">
+                        <li role="presentation"><a href="/">首页</a></li>
+                        <li role="presentation"><a href="invest">我要投资</a></li>
+                        <li role="presentation" class="active"><a href="loan">我要贷款</a></li>
+                        <li role="presentation" class="visible-lg"><a href="loan">行业新闻</a></li>
+                    </ul>
+                </div>
+                <div class="nav-img col-md-offset-9 visible-lg visible-md"></div>
             </div>
-            <div class="col-md-5 col-md-offset-1 menu">
-                <ul class="nav nav-pills h5" role="tablist">
-                    <li role="presentation"><a href="/">首页</a></li>
-                    <li role="presentation"><a href="invest">我要投资</a></li>
-                    <li role="presentation" class="active"><a href="loan">我要贷款</a></li>
-                    <li role="presentation" class="visible-lg"><a href="loan">行业新闻</a></li>
-                </ul>
-            </div>
-            <div class="nav-img col-md-offset-9 visible-lg visible-md"></div>
         </div>
-    </div>
-</nav>
+    </nav>
+</div>
 <div class="row">
     <div class="container-fluid">
         <div class="row">
+        <script>
+            var app = angular.module('myApp', []);
+
+            app.run(function($rootScope) {
+                $rootScope.name = "Ari Lerner";
+            });
+            app.controller('MyController', function($scope) {
+                $scope.person = {
+                    name: "Ari Lerner"
+                };
+            });
+
+            app.controller('ParentController', function($scope) {
+                $scope.person = {greeted: false};
+            });
+
+            app.controller('ChildController', function($scope) {
+                $scope.sayHello = function() {
+                    $scope.person.greeted = true;
+                }
+            });
+
+            app.controller('PlayerController', ['$scope', function($scope) {
+                $scope.playing = false;
+                $scope.audio = document.createElement('audio');
+                $scope.audio.src = '/1.mp3';
+                $scope.play = function() {
+                    $scope.audio.play();
+                    $scope.playing = true;
+                };
+                $scope.stop = function() {
+                    $scope.audio.pause();
+                    $scope.playing = false;
+                };
+                $scope.audio.addEventListener('ended', function() {
+                    $scope.$apply(function() {
+                        $scope.stop()
+                    });
+                });
+            }]);        </script>
+        <div>
+          <input type="text" ng-model="yourName" placeholder="Enter a name here">
+          <h1>Hello, {{ yourName }}!</h1>
+            <h2>{{name}}</h2>
+        </div>
+        <div ng-controller="MyController">{{person.name}}</div>
+
+        <div ng-controller="ParentController">
+            <div ng-controller="ChildController">
+                <input type="text" ng-model="person.name" placeholder="Name"></input>
+                <a ng-click="sayHello()">Say hello</a>
+            </div>
+            {{ person }}
+        </div>
+        <div ng-controller="PlayerController">
+            <button ng-click="play()" class="button" ng-show="!playing">Play</button>
+            <button ng-click="stop()" class="button alert" ng-show="playing">Stop</button>
+            Playing audio: <b>{{ playing }}</b>
+        </div>
             <ul class="list-unstyled">
                 <li>
                     P2P平台:
