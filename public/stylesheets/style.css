@@ -25,15 +25,20 @@
     padding-left: 80px;
 }
 
+
+
 /* 字体大小 */
 .f20{font-size: 20px;}
 
 /* 字体颜色 */
+.c-eee{color: #eee}
+.c-ccc{color: #ccc;}
 .c-aaa{color: #aaa;}
 .c-base{color: #7a4376;}
 
 /* 长度 */
 .w80{width: 80px;}
+.w100{width: 100px;}
 
 /* 边距 */
 .p25{padding: 25px;}
@@ -41,9 +46,20 @@
 .m10{margin: 10px;}
 .m15{margin: 15px;}
 .mt10{margin-top: 10px;}
+.ml30{margin-left: 30px;}
 .mb0{margin-bottom: 0;}
 .mb10{margin-bottom: 10px;}
 
-.hot-container{width:84%;margin:auto}
-.list-content{border-left: 1px #CCC solid;border-right: 1px #CCC solid;border-bottom: 1px #CCC solid}
-.list-item {border: 1px #CCC solid;padding: 10px;float: left;width: 100%;}
+/* 背景色 */
+.bg-container{background: #f1effd;}
+.bg-mall-shade{
+    background-image: -moz-linear-gradient(left, #222c5f, #61349d); /* Firefox */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #4a2e94), color-stop(1, #7a4376)); /* Saf4+, Chrome */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endColorstr='#538300', GradientType='1'); /* IE*/
+}
+.bg-white{background: #fff;}
+
+.hot-container{width:82%;margin:30px auto}
+.hot-container ul a:hover{background: #f1effd}
+.list-content{border: 3px #eee solid;border-top:none;}
+.list-content a:hover{color: #ffff00}
