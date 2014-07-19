@@ -24,3 +24,26 @@
 .logo-text > span {
     padding-left: 80px;
 }
+
+/* 字体大小 */
+.f20{font-size: 20px;}
+
+/* 字体颜色 */
+.c-aaa{color: #aaa;}
+.c-base{color: #7a4376;}
+
+/* 长度 */
+.w80{width: 80px;}
+
+/* 边距 */
+.p25{padding: 25px;}
+.p20{padding: 20px;}
+.m10{margin: 10px;}
+.m15{margin: 15px;}
+.mt10{margin-top: 10px;}
+.mb0{margin-bottom: 0;}
+.mb10{margin-bottom: 10px;}
+
+.hot-container{width:84%;margin:auto}
+.list-content{border-left: 1px #CCC solid;border-right: 1px #CCC solid;border-bottom: 1px #CCC solid}
+.list-item {border: 1px #CCC solid;padding: 10px;float: left;width: 100%;}
