@@ -29,11 +29,13 @@
 
 /* 字体大小 */
 .f20{font-size: 20px;}
+.f25{font-size: 25px;}
 
 /* 字体颜色 */
 .c-eee{color: #eee}
 .c-ccc{color: #ccc;}
 .c-aaa{color: #aaa;}
+.c-yellow{color: #ffff00}
 .c-base{color: #7a4376;}
 
 /* 长度 */
@@ -43,6 +45,11 @@
 /* 边距 */
 .p25{padding: 25px;}
 .p20{padding: 20px;}
+.pt10{padding-top: 10px;}
+.pb10{padding-bottom: 10px;}
+.pb20{padding-bottom: 20px;}
+.pl20{padding-left: 20px;}
+.pr20{padding-right: 20px;}
 .m10{margin: 10px;}
 .m15{margin: 15px;}
 .mt10{margin-top: 10px;}
@@ -59,7 +66,11 @@
 }
 .bg-white{background: #fff;}
 
+/* 边框 */
+.border-s-g-3{border: 3px #eee solid;}
+
+.search-result-tag{width:81%;margin:10px auto -10px;}
 .hot-container{width:82%;margin:30px auto}
 .hot-container ul a:hover{background: #f1effd}
 .list-content{border: 3px #eee solid;border-top:none;}
-.list-content a:hover{color: #ffff00}
+.thumbnail a:hover{color: #ffff00}
