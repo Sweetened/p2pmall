@@ -24,3 +24,98 @@
 .logo-text > span {
     padding-left: 80px;
 }
+
+.search-white-text{
+    color: #fff;
+}
+.search-gray-text{
+    color: #bababa;
+}
+
+.mb10 {
+    margin-bottom: 10px
+}
+.mt4 {
+    margin-top: 4px
+}
+.mt50 {
+    margin-top: 50px
+}
+ul {
+    list-style: none
+}
+
+.ui-filter {
+
+}
+
+.ui-filter-header {
+    line-height: 30px
+}
+
+.ui-filter-category li {
+    height: 24px;
+    line-height: 24px;
+}
+
+.ui-filter-title {
+    float: left;
+    width: 80px
+}
+
+.ui-filter-tag {
+    display: block;
+    float: left;
+    font-size: 14px;
+    padding: 0 15px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer
+}
+
+.ui-filter-tag:hover {
+    background: #f3f3f3
+}
+
+.ui-filter-tag:active {
+    background: #0697da;
+    color: #fff
+}
+
+.ui-filter-tag.active {
+    background: #00a8e8;
+    color: #fff
+}
+
+.ui-filter-tag input {
+    display: none
+}
+
+.ui-filter-tag span {
+    display: block;
+    line-height: 23px
+}
+
+
+.fn-left {
+    float: left
+}
+.fn-clear {
+    zoom: 1
+}
+.fn-clear:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+    margin: 0;
+    padding: 0
+}
+
+body, button, input, select, textarea {
+    font: 14px/1.5 '微软雅黑', YaHei, tahoma, arial, "Hiragino Sans GB", \5b8b\4f53
+}
