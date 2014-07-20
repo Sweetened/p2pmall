@@ -6,6 +6,7 @@
     background-image: url("../images/banner.jpg");
 }
 
+.nav-search
 .nav-img {
     background-image: url("../images/img.jpg");
     background-repeat: no-repeat;
@@ -41,6 +42,7 @@
 /* 长度 */
 .w80{width: 80px;}
 .w100{width: 100px;}
+.w140{width: 140px;}
 
 /* 边距 */
 .p25{padding: 25px;}
@@ -74,3 +76,22 @@
 .hot-container ul a:hover{background: #f1effd}
 .list-content{border: 3px #eee solid;border-top:none;}
 .thumbnail a:hover{color: #ffff00}
+
+.opacity-5{
+    filter:alpha(opacity=50);
+-moz-opacity:0.5;
+-khtml-opacity: 0.5;
+opacity: 0.5;
+}
+
+.position-w74-l21{
+    position: absolute;
+    width: 74%;
+    left: 21%;
+}
+
+.position-w15-l5{
+    position: absolute;
+    width: 15%;
+    left: 5%;
+}
