@@ -47,8 +47,12 @@
 .w180{width: 180px;}
 .w82p{width:82%}
 
+<<<<<<< HEAD
 /* 边距 */
 .p0{padding: 0px;}
+=======
+/* 边距 */    
+>>>>>>> b9f2cec71c5f4063aef7cca66b3e9061460e57f0
 .p25{padding: 25px;}
 .p20{padding: 20px;}
 .pt10{padding-top: 10px;}
