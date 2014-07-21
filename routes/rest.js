@@ -4,19 +4,14 @@ var router = express.Router();
 var mongojs = require('mongojs');
 var config = require('../config');
 
-var connectionstring = config.connectionstring;
-var collections = config.collections;
+var db = mongojs(config.connectionstring);
 
-var db = mongojs(connectionstring, collections);
+router.get('/:model', function (req, res) {
 
-router.get('/invests', function (req, res) {
-    db.invests.find(function (err, docs) {
-        res.send(docs);
-    });
-});
-router.get('/loans', function (req, res) {
-    db.loans.find(function (err, docs) {
-        res.send(docs);
+    var mycollection = db.collection(req.params.model);
+
+    mycollection.find(function (err, data) {
+        res.send(data);
     });
 });
 
