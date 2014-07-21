@@ -2,7 +2,12 @@ var express = require('express');
 var router = express.Router();
 
 var mongojs = require('mongojs');
-var db = mongojs("mongodb://p2pmall:paic1234@kahana.mongohq.com:10026/p2pmall", ["invests","loans"]);
+var config = require('../config');
+
+var connectionstring = config.connectionstring;
+var collections = config.collections;
+
+var db = mongojs(connectionstring, collections);
 
 router.get('/invests', function (req, res) {
     db.invests.find(function (err, docs) {
