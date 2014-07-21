@@ -7,7 +7,7 @@
                 <div class="navbar-header logo-text">
                     <a class="navbar-brand" href="/">
                         <img alt="logo" src="../images/logo.jpg"/>
-                        <span class="h2">贷款商城</span>
+                        <span class="h3">借贷商城</span>
                     </a>
                     <span class="h6 text-muted">P2P一站通</span>
                 </div>
@@ -27,129 +27,101 @@
     </div>
 </nav>
 <div class="row">
-    <div class="container-fluid">
-        <div class="row">
-            <ul class="list-unstyled">
-                <li>
-                    P2P平台:
-                    <span class="label label-success">不限</span>
-                    <span class="label label-success">陆金所</span>
-                </li>
-                <li>
-                    贷款金额:
-                    <span class="label label-success">不限</span>
-                    <span class="label label-success">10000~50000</span>
-                </li>
-                <li>
-                    贷款期限:
-                    <span class="label label-success">不限</span>
-                    <span class="label label-success">1月~3月</span>
-                </li>
-                <li>
-                    职业身份:
-                    <span class="label label-success">不限</span>
-                    <span class="label label-success">企业</span>
-                    <span class="label label-success">个体户</span>
-                </li>
+    <div class="invest-search-bg" style="height: 360px;padding:30px">
+        <div class="position-w15-l5 bg-white opacity-5">    
+            <ul class="nav  nav-tabs nav-stacked" role="tablist">
+                <li class="active"><a href="#investSearch" role="tab" data-toggle="tab"   class="c-eee">搜投资</a></li>
+                <li><a href="#loanSearch" role="tab" data-toggle="tab" >搜贷款</a></li>
             </ul>
+         </div>
+        <div class="position-w74-l21 bg-white opacity-5">
+            <div class="tab-content">
+                <div id="investSearch" class="tab-pane active">
+                    <div class="col-md-6">
+                    <ul class="list-unstyled"> 
+                    <li><p class="text-center">P2P平台:<select></select></p></li>
+                    <li><p class="text-center">投资金额:<select></select></p></li>
+                    <li><p class="text-center">投资期限:<select></select></p></li>
+                    <li><p class="text-center"><a href="#" class="btn bg-mall c-eee w140" role="button">试试看</a></p></li>
+                    </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="../images/ad2.jpg" style="margin:8px"/>
+                    </div>
+                </div>
+                <div id="loanSearch" class="tab-pane">
+                   <div class="col-md-6">
+                    <ul class="list-unstyled">
+                    <li><p class="text-center">P2P平台:<select></select></p></li>
+                    <li><p class="text-center">贷款金额:<select></select></p></li>
+                    <li><p class="text-center">贷款期限:<select></select></p></li>
+                    <li><p class="text-center"><a href="#" class="btn bg-mall c-eee w100" role="button">试试看</a></p></li>
+                    </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="../images/ad1.jpg" style="margin:8px"/>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-6 col-sm-6 col-lg-4 bg-danger">
-                <h3>陆金所</h3>
+</div>
+<div class="row bg-container">
+    <div class="hot-container mb10">
+        <ul class="nav nav-tabs bg-mall-shade" role="tablist">
+            <li class="active mt10 ml30"><a href="#invest" role="tab" data-toggle="tab" class="c-eee">热门投资</a></li>
+            <li class="mt10"><a href="#loan" role="tab" data-toggle="tab" class="c-eee">热门贷款</a></li>
+        </ul>
+        <div class="tab-content list-content bg-white">
+            <div class="tab-pane active" id="invest" ng-controller="hotController">
+                <div class="row p25">
+                    <div class="col-md-4 p20" ng-repeat="hotInvest in hotInvests">
+                        <div class="thumbnail mb0">
+                            <div class="page-header m10 text-left">
+                                <img alt="陆金所" src="../images/{{hotInvest.company}}.jpg">
+                            </div>
+                            <div class="c-aaa m15">
+                                <p>{{hotInvest.name}}</p>
 
-                <p>富盈人生第14期</p>
+                                <p><span class="c-base f20">{{hotInvest.time}}</span>个月</p>
 
-                <p>24个月</p>
+                                <p>预期收益<span class="c-base f20">{{hotInvest.description}}</span></p>
 
-                <p>
-                            <span class="label label-danger">
-                                预期收益18%
-                            </span>
-                </p>
+                                <p><span class="c-base f20">{{hotInvest.amount|number}}</span>元</p>
 
-                <p>30，000元</p>
+                                <p class="text-center"><a href="#" class="btn bg-mall c-eee w100" role="button">购买</a>
 
-                <p>
-                    <button name="buy" class="btn btn-primary btn-xs" role="button">购买</button>
-                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-6 col-sm-6 col-lg-4 bg-success">
-                <h3>人人贷</h3>
+            <div class="tab-pane" id="loan" ng-controller="hotController">
+                <div class="row p25">
+                    <div class="col-md-4 p20" ng-repeat="hotLoan in hotLoans">
+                        <div class="thumbnail mb0">
+                            <div class="page-header m10 text-left">
+                                <img alt="陆金所" src="../images/{{hotLoan.company}}.jpg">
+                            </div>
+                            <div class="c-aaa m15">
+                                <p>{{hotLoan.name}}</p>
 
-                <p>资金周转</p>
+                                <p><span class="c-base f20">{{hotLoan.time}}</span>个月</p>
 
-                <p>18个月</p>
+                                <p>预期收益<span class="c-base f20">{{hotLoan.description}}</span></p>
 
-                <p>
-                            <span class="label label-danger">
-                                预期收益13.2%
-                            </span>
-                </p>
+                                <p><span class="c-base f20">{{hotLoan.amount|number}}</span>元</p>
 
-                <p>10,000元</p>
+                                <p class="text-center"><a href="#" class="btn bg-mall c-eee w100" role="button">购买</a>
 
-                <p>
-                    <button name="buy" class="btn btn-primary btn-xs" role="button">购买</button>
-                </p>
-            </div>
-            <div class="col-6 col-sm-6 col-lg-4 bg-warning">
-                <h3>天天贷</h3>
-
-                <p>月月盈</p>
-
-                <p>1个月</p>
-
-                <p>
-                            <span class="label label-danger">
-                                预期收益20%
-                            </span>
-                </p>
-
-                <p>50,000元</p>
-
-                <p>
-                    <button name="buy" class="btn btn-primary btn-xs" role="button">购买</button>
-                </p>
-            </div>
-            <div class="col-6 col-sm-6 col-lg-4 bg-warning">
-                <h3>陆金所</h3>
-
-                <p>季季盈</p>
-
-                <p>3个月</p>
-
-                <p>
-                            <span class="label label-info">
-                                预期收益15%
-                            </span>
-                </p>
-
-                <p>100，000元</p>
-
-                <p>
-                    <button name="buy" class="btn btn-primary btn-xs" role="button">购买</button>
-                </p>
-            </div>
-            <div class="col-6 col-sm-6 col-lg-4 bg-info">
-                <h3>陆金所</h3>
-
-                <p>年年盈</p>
-
-                <p>12个月</p>
-
-                <p>
-                            <span class="label label-info">
-                                预期收益5%
-                            </span>
-                </p>
-
-                <p>100，000元</p>
-
-                <p>
-                    <button name="buy" class="btn btn-primary btn-xs" role="button">购买</button>
-                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<script src="/javascripts/angular/angular.js"></script>
+<script src="/javascripts/index/index.js"></script>
 <% include footer.ejs %>

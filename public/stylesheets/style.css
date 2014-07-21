@@ -6,6 +6,7 @@
     background-image: url("../images/banner.jpg");
 }
 
+.nav-search
 .nav-img {
     background-image: url("../images/img.jpg");
     background-repeat: no-repeat;
@@ -24,7 +25,7 @@
 .logo-text > span {
     padding-left: 80px;
 }
-
+/* 筛选字体颜色 */
 .search-white-text{
     color: #fff;
 }
@@ -32,15 +33,8 @@
     color: #bababa;
 }
 
-.mb10 {
-    margin-bottom: 10px
-}
-.mt4 {
-    margin-top: 4px
-}
-.mt50 {
-    margin-top: 50px
-}
+
+/* 筛选边框 */
 ul {
     list-style: none
 }
@@ -118,4 +112,73 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
 
 body, button, input, select, textarea {
     font: 14px/1.5 '微软雅黑', YaHei, tahoma, arial, "Hiragino Sans GB", \5b8b\4f53
+}
+
+/* 字体大小 */
+.f20{font-size: 20px;}
+.f25{font-size: 25px;}
+
+/* 字体颜色 */
+.c-eee{color: #eee}
+.c-ccc{color: #ccc;}
+.c-aaa{color: #aaa;}
+.c-yellow{color: #ffff00}
+.c-base{color: #7a4376;}
+
+/* 长度 */
+.w80{width: 80px;}
+.w100{width: 100px;}
+.w140{width: 140px;}
+
+/* 边距 */
+.p25{padding: 25px;}
+.p20{padding: 20px;}
+.pt10{padding-top: 10px;}
+.pb10{padding-bottom: 10px;}
+.pb20{padding-bottom: 20px;}
+.pl20{padding-left: 20px;}
+.pr20{padding-right: 20px;}
+.m10{margin: 10px;}
+.m15{margin: 15px;}
+.mt10{margin-top: 10px;}
+.ml30{margin-left: 30px;}
+.mb0{margin-bottom: 0;}
+.mb10{margin-bottom: 10px;}
+.mt4 {margin-top: 4px}
+.mt50 {margin-top: 50px}
+/* 背景色 */
+.bg-container{background: #f1effd;}
+.bg-mall-shade{
+    background-image: -moz-linear-gradient(left, #222c5f, #61349d); /* Firefox */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #4a2e94), color-stop(1, #7a4376)); /* Saf4+, Chrome */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endColorstr='#538300', GradientType='1'); /* IE*/
+}
+.bg-white{background: #fff;}
+
+/* 边框 */
+.border-s-g-3{border: 3px #eee solid;}
+
+.search-result-tag{width:81%;margin:10px auto -10px;}
+.hot-container{width:82%;margin:30px auto}
+.hot-container ul a:hover{background: #f1effd}
+.list-content{border: 3px #eee solid;border-top:none;}
+.thumbnail a:hover{color: #ffff00}
+
+.opacity-5{
+    filter:alpha(opacity=50);
+-moz-opacity:0.5;
+-khtml-opacity: 0.5;
+opacity: 0.5;
+}
+
+.position-w74-l21{
+    position: absolute;
+    width: 74%;
+    left: 21%;
+}
+
+.position-w15-l5{
+    position: absolute;
+    width: 15%;
+    left: 5%;
 }
