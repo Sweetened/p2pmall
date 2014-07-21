@@ -26,45 +26,89 @@
         </div>
     </div>
 </nav>
-<div class="row">
-    <div class="invest-search-bg" style="height: 360px;padding:30px">
-        <div class="position-w15-l5 bg-white opacity-5">    
-            <ul class="nav  nav-tabs nav-stacked" role="tablist">
-                <li class="active"><a href="#investSearch" role="tab" data-toggle="tab"   class="c-eee">搜投资</a></li>
+<div class="row index-search-bg">
+    <div class="container-fluid w82p p0 m30-auto">
+        <div class="col-md-2 p0">    
+            <ul id="searchTab" class="nav nav-tabs nav-stacked" role="tablist">
+                <li class=""><a href="#investSearch" role="tab" data-toggle="tab"   class="c-eee">搜投资</a></li>
                 <li><a href="#loanSearch" role="tab" data-toggle="tab" >搜贷款</a></li>
             </ul>
          </div>
-        <div class="position-w74-l21 bg-white opacity-5">
+        <div class="col-md-10 bg-white opacity-5 p20">
             <div class="tab-content">
                 <div id="investSearch" class="tab-pane active">
-                    <div class="col-md-6">
-                    <ul class="list-unstyled"> 
-                    <li><p class="text-center">P2P平台:<select></select></p></li>
-                    <li><p class="text-center">投资金额:<select></select></p></li>
-                    <li><p class="text-center">投资期限:<select></select></p></li>
-                    <li><p class="text-center"><a href="#" class="btn bg-mall c-eee w140" role="button">试试看</a></p></li>
-                    </ul>
+                <div class="col-md-5">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">P2P平台:</label>
+                            <div class="col-md-8">
+                                <select class="form-control">
+                                  <option>不限</option>
+                                  <option>陆金所</option>
+                                  <option>人人贷</option>
+                                  <option>有利网</option>
+                                  <option>合盘贷</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">投资金额:</label>
+                            <div class="col-md-8">
+                                <select class="form-control">
+                                  <option>不限</option>
+                                  <option>一万以下</option>
+                                  <option>一万至五万</option>
+                                  <option>五万至十万</option>
+                                  <option>十万以上</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">投资期限:</label>
+                            <div class="col-md-8">
+                                <select class="form-control">
+                                  <option>不限</option>
+                                  <option>一至六个月</option>
+                                  <option>六个月至一年</option>
+                                  <option>一年至三年</option>
+                                  <option>三年以上</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">&nbsp;</label>
+                            <div class="col-md-8">
+                                <p><a href="#" class="btn bg-mall c-eee w180" role="button">试试看</a></p>
+                            </div>
+                        </div>
+                    </form>
                     </div>
-                    <div class="col-md-6">
-                        <img src="../images/ad2.jpg" style="margin:8px"/>
+                    <div class="col-md-7">
+                        <img src="../images/ad2.jpg"/>
                     </div>
                 </div>
                 <div id="loanSearch" class="tab-pane">
-                   <div class="col-md-6">
-                    <ul class="list-unstyled">
-                    <li><p class="text-center">P2P平台:<select></select></p></li>
-                    <li><p class="text-center">贷款金额:<select></select></p></li>
-                    <li><p class="text-center">贷款期限:<select></select></p></li>
-                    <li><p class="text-center"><a href="#" class="btn bg-mall c-eee w100" role="button">试试看</a></p></li>
-                    </ul>
+                    <div class="col-md-2">
+                        <div class="row">
+                            <p class="text-center">P2P平台:</p>
+                        </div>
+                        <div class="row">
+                            <p class="text-center">贷款金额:</p>
+                        </div>
+                        <div class="row">
+                            <p class="text-center">贷款期限:</p>
+                        </div>
+                      </div>
+                    <div class="col-md-3">
+                    <p class="text-center"><a href="#" class="btn bg-mall c-eee w140" role="button">试试看</a></p>
                     </div>
-                    <div class="col-md-6">
-                        <img src="../images/ad1.jpg" style="margin:8px"/>
+                    <div class="col-md-7">
+                        <img src="../images/ad1.jpg"/>
                     </div>
                 </div>
                 </div>
             </div>
-        </div>
+            </div>
 </div>
 <div class="row bg-container">
     <div class="hot-container mb10">

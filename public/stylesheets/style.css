@@ -2,8 +2,10 @@
     background-color: #7a4376;
 }
 
-.invest-search-bg {
+.index-search-bg {
     background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    height: 360px
 }
 
 .nav-search
@@ -128,9 +130,11 @@ body, button, input, select, textarea {
 /* 长度 */
 .w80{width: 80px;}
 .w100{width: 100px;}
-.w140{width: 140px;}
+.w180{width: 180px;}
+.w82p{width:82%}
 
-/* 边距 */    
+/* 边距 */
+.p0{padding: 0px;}
 .p25{padding: 25px;}
 .p20{padding: 20px;}
 .pt10{padding-top: 10px;}
@@ -140,6 +144,7 @@ body, button, input, select, textarea {
 .pr20{padding-right: 20px;}
 .m10{margin: 10px;}
 .m15{margin: 15px;}
+.m30-auto{margin:30px auto;}
 .mt10{margin-top: 10px;}
 .ml30{margin-left: 30px;}
 .mb0{margin-bottom: 0;}
@@ -166,19 +171,17 @@ body, button, input, select, textarea {
 
 .opacity-5{
     filter:alpha(opacity=50);
--moz-opacity:0.5;
--khtml-opacity: 0.5;
-opacity: 0.5;
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
 }
 
-.position-w74-l21{
-    position: absolute;
-    width: 74%;
-    left: 21%;
-}
-
-.position-w15-l5{
-    position: absolute;
-    width: 15%;
-    left: 5%;
+#searchTab.active{
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: #fff;
 }
