@@ -31,6 +31,7 @@
 
 
 /* 字体大小 */
+.f17{font-size: 17px;}
 .f20{font-size: 20px;}
 .f25{font-size: 25px;}
 
@@ -89,12 +90,42 @@
     opacity: 0.5;
 }
 
-#searchTab.active{
+#searchTab .active{
     filter:alpha(opacity=50);
     -moz-opacity:0.5;
     -khtml-opacity: 0.5;
     opacity: 0.5;
-    padding-left: 0px;
-    padding-right: 0px;
     background: #fff;
+    margin-right: 0px;
+    background-image: url("../images/filter-icons.png");
+    background-repeat: no-repeat;
 }
+
+#searchTab .active a{
+    color: #7a4376;
+}
+
+#searchTab li:hover{
+     filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    background: #fff;
+    margin-right: 0px;
+}
+
+#searchTab a:hover {
+     filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    background: #fff;
+    margin-right: 0px;
+}
+
+#searchTab li{
+    margin-right: 8px;
+    margin-bottom: 12px;
+}
+
+
