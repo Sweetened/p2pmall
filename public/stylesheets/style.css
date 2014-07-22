@@ -5,17 +5,7 @@
 .index-search-bg {
     background-image: url("../images/banner.jpg");
     background-repeat: no-repeat;
-    height: 360px
-}
-.invest-search-bg {
-    background-image: url("../images/banner.jpg");
-    background-repeat: no-repeat;
-    height: 360px
-}
-.loan-search-bg {
-    background-image: url("../images/banner.jpg");
-    background-repeat: no-repeat;
-    height: 360px
+    height: 360px;
 }
 .nav-search
 .nav-img {
@@ -193,8 +183,6 @@ body, button, input, select, textarea {
     opacity: 0.5;
     background: #fff;
     margin-right: 0px;
-    background-image: url("../images/filter-icons.png");
-    background-repeat: no-repeat;
 }
 
 #searchTab .active a{
@@ -208,6 +196,7 @@ body, button, input, select, textarea {
     opacity: 0.5;
     background: #fff;
     margin-right: 0px;
+    color: #7a4376;
 }
 
 #searchTab a:hover {
@@ -217,8 +206,12 @@ body, button, input, select, textarea {
     opacity: 0.5;
     background: #fff;
     margin-right: 0px;
+    color: #7a4376;
 }
 
+#searchTab a{
+    color:  white;
+}
 #searchTab li{
     margin-right: 8px;
     margin-bottom: 12px;
