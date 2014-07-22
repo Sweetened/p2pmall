@@ -26,43 +26,135 @@
 </nav>
 <div class="row">
     <div class="container-fluid">
-        <div class="row invest-search-bg" style="height: 300px">
+        <div class="row invest-search-bg" style="height: 350px">
             <div class="col-9 col-sm-9 col-lg-9 col-lg-offset-2">
-                <div style="height: 30px">
-
+                <div class="ui-filter fn-left mt50" id="invest-list-filter">
+                    <div class="ui-filter-header mb10">
+                        <h4 class="search-white-text" >筛选投资项目</h4>
+                    </div>
+                    <ul >
+                        <li>
+                            <ul class="ui-filter-category category fn-clear">
+                                <li class="ui-filter-title search-white-text">P2P平台</li>
+                                <li class="ui-filter-tag  search-gray-text  all active">
+                                    <input type="checkbox" name="investPlatform" value="all" checked="checked">
+                                    <span>不限</span>
+                                </li>
+                                <li class="ui-filter-tag  search-gray-text condition ">
+                                    <input type="checkbox" name="investPlatform" >
+                                    <span>陆金所</span>
+                                </li>
+                                <li class="ui-filter-tag  search-gray-text condition ">
+                                    <input type="checkbox" name="investPlatform" >
+                                    <span>人人贷</span>
+                                </li>
+                                <li class="ui-filter-tag  search-gray-text condition ">
+                                    <input type="checkbox" name="investPlatform" >
+                                    <span>宜人贷</span>
+                                </li>
+                                <li class="ui-filter-tag  search-gray-text condition ">
+                                    <input type="checkbox" name="investPlatform" >
+                                    <span>拍拍贷</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mt4">
+                            <ul class="ui-filter-category category fn-clear">
+                                <li class="ui-filter-title search-white-text">投资金额</li>
+                                <li class="ui-filter-tag  search-gray-text  all active">
+                                    <input type="checkbox" name="investAmount" value="all" checked="checked">
+                                    <span>不限</span>
+                                </li>
+                                <li class="ui-filter-tag  search-gray-text condition ">
+                                    <input type="checkbox" name="investAmount" >
+                                    <span>1万以下</span>
+                                </li>
+                                <li class="ui-filter-tag  search-gray-text condition ">
+                                    <input type="checkbox" name="investAmountm" >
+                                    <span>1万-5万</span>
+                                </li>
+                                <li class="ui-filter-tag  search-gray-text condition ">
+                                    <input type="checkbox" name="investAmount" >
+                                    <span>5万-10万</span>
+                                </li>
+                                <li class="ui-filter-tag  search-gray-text condition ">
+                                    <input type="checkbox" name="investAmount" >
+                                    <span>10万-20万</span>
+                                </li>
+                                <li class="ui-filter-tag  search-gray-text condition ">
+                                    <input type="checkbox" name="investAmount" >
+                                    <span>20万-30万</span>
+                                </li>
+                                <li class="ui-filter-tag  search-gray-text condition ">
+                                    <input type="checkbox" name="investAmount" >
+                                    <span>30万以上</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mt4">
+                            <ul class="ui-filter-category category fn-clear">
+                                <li class="ui-filter-title search-white-text">投资期限</li>
+                                <li class="ui-filter-tag  search-gray-text  all active">
+                                    <input type="checkbox" name="investTerm" value="all" checked="checked">
+                                    <span>不限</span>
+                                </li>
+                                <li class="ui-filter-tag  search-gray-text condition ">
+                                    <input type="checkbox" name="investTerm" >
+                                    <span>1月-3月</span>
+                                </li>
+                                <li class="ui-filter-tag  search-gray-text condition ">
+                                    <input type="checkbox" name="investTerm" >
+                                    <span>3月-6月</span>
+                                </li>
+                                <li class="ui-filter-tag  search-gray-text condition ">
+                                    <input type="checkbox" name="investTerm" >
+                                    <span>6月-12月</span>
+                                </li>
+                                <li class="ui-filter-tag  search-gray-text condition ">
+                                    <input type="checkbox" name="investTerm" >
+                                    <span>12月-24月</span>
+                                </li>
+                                <li class="ui-filter-tag  search-gray-text condition ">
+                                    <input type="checkbox" name="investTerm" >
+                                    <span>24月-48月</span>
+                                </li>
+                                <li class="ui-filter-tag  search-gray-text condition ">
+                                    <input type="checkbox" name="investTerm" >
+                                    <span>48个月以上</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mt4">
+                            <ul class="ui-filter-category category fn-clear">
+                                <li class="ui-filter-title search-white-text">期望收益</li>
+                                <li class="ui-filter-tag  search-gray-text  all active">
+                                    <input type="checkbox" name="investYield" value="all" checked="checked">
+                                    <span>不限</span>
+                                </li>
+                                <li class="ui-filter-tag  search-gray-text condition ">
+                                    <input type="checkbox" name="investYield" >
+                                    <span>5%以下</span>
+                                </li>
+                                <li class="ui-filter-tag  search-gray-text condition ">
+                                    <input type="checkbox" name="investYield" >
+                                    <span>5%-8%</span>
+                                </li>
+                                <li class="ui-filter-tag  search-gray-text condition ">
+                                    <input type="checkbox" name="investYield" >
+                                    <span>8%-12%</span>
+                                </li>
+                                <li class="ui-filter-tag  search-gray-text condition ">
+                                    <input type="checkbox" name="investYield" >
+                                    <span>12%-20%</span>
+                                </li>
+                                <li class="ui-filter-tag  search-gray-text condition ">
+                                    <input type="checkbox" name="investYield" >
+                                    <span>20%以上</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="list-unstyled">
-                    <li>
-                        P2P平台:
-                        <span class="label label-info">不限</span>
-                        <span class="label label-danger">陆金所</span>
-                        <span class="label label-info">人人贷</span>
-                        <span class="label label-info">天天贷</span>
-                    </li>
-                    <li>
-                        贷款金额:
-                        <span class="label label-danger">不限</span>
-                        <span class="label label-info">10,000~50,000</span>
-                        <span class="label label-info">50,000~100,000</span>
-                        <span class="label label-info">100,000~300,000</span>
-                        <span class="label label-info">300,000~500,000</span>
-                        <span class="label label-info">500,000~100,000</span>
-                    </li>
-                    <li>
-                        贷款期限:
-                        <span class="label label-info">不限</span>
-                        <span class="label label-danger">1月~3月</span>
-                        <span class="label label-info">3月~6月</span>
-                        <span class="label label-info">6月~12月</span>
-                    </li>
-                    <li>
-                        职业身份:
-                        <span class="label label-info">不限</span>
-                        <span class="label label-info">企业</span>
-                        <span class="label label-info">个体户</span>
-                        <span class="label label-danger">工薪族</span>
-                    </li>
-                </ul>
             </div>
         </div>
         <div class="row bg-container">

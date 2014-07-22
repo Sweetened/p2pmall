@@ -14,3 +14,9 @@ init
 PAAS
 
 http://p2pmall.herokuapp.com
+
+MongoDB
+
+mongodb://p2pmall:paic1234@kahana.mongohq.com:10026/p2pmall
+
+rest url : http://localhost:3000/rest/invests
