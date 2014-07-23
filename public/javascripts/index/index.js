@@ -1,5 +1,5 @@
 var app = angular.module('myApp', []);
-app.controller('hotController', function ($scope, $http) {
+app.controller('hotController', function ($scope, $http, $location) {
     $scope.hotLoans = [
         {name: '富盈人生第1期', company: 'lufax', time: 24, description: '18%', amount: 3000},
         {name: '天天盈', company: 'renrendai', time: 36, description: '19%', amount: 600000},
@@ -7,9 +7,7 @@ app.controller('hotController', function ($scope, $http) {
         {name: '年年盈', company: 'lufax', time: 12, description: '10%', amount: 120000},
         {name: '季季盈', company: 'yooli', time: 3, description: '17.8%', amount: 30000}
     ];
-
-    var investsUrl = 'http://localhost:3000/rest/invests';
-
+    var investsUrl = "http://" + $location.host() + ":" + $location.port() + '/rest/invests';
     $http.get(investsUrl).success(function (data) {
         $scope.hotInvests = data;
     });
