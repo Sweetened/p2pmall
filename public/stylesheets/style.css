@@ -90,6 +90,10 @@ ul {
     background: #00a8e8;
     color: #fff
 }
+.active-red.active{
+    background: #ea5404;
+    color: #fff
+}
 
 .ui-filter-tag input {
     display: none
@@ -132,7 +136,10 @@ body, button, input, select, textarea {
 /* 字体颜色 */
 .c-eee{color: #eee}
 .c-ccc{color: #ccc;}
+.c-ddd{color: #ddd;}
 .c-aaa{color: #aaa;}
+.c-gray-70 {color: #707070;}
+.c-gray-b5 {color: #b5b5b5;}
 .c-yellow{color: #ffff00}
 .c-base{color: #7a4376;}
 
@@ -141,6 +148,9 @@ body, button, input, select, textarea {
 .w100{width: 100px;}
 .w180{width: 180px;}
 .w82p{width:82%}
+
+/* 长度 */
+.h-auto{height: auto;overflow: auto;}
 
 /* 边距 */
 .p0{padding: 0;}
@@ -153,19 +163,26 @@ body, button, input, select, textarea {
 .pr20{padding-right: 20px;}
 .m10{margin: 10px;}
 .m15{margin: 15px;}
-.m30-auto{margin:20px auto;}
+.m10-auto {margin:10px auto;}
+.m20-auto {margin:20px auto;}
+.m20-30{margin: 20px 30px;}
 .mt10{margin-top: 10px;}
+.mt30{margin-top: 30px;}
+.mt50 {margin-top: 50px}
 .ml30{margin-left: 30px;}
 .mb0{margin-bottom: 0;}
 .mb10{margin-bottom: 10px;}
+.mb20{margin-bottom: 20px;}
 .mt4 {margin-top: 4px}
-.mt50 {margin-top: 50px}
+
 /* 背景色 */
-.bg-container{background: #f1effd;}
+.bg-red{background: #ea5404;}
+.bg-container{background: #f2edfa;}
+.bg-search{background: #f8f8f8;border: 2px #ddd solid;}
 .bg-mall-shade{
     background-image: -moz-linear-gradient(left, #222c5f, #61349d); /* Firefox */
     background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #4a2e94), color-stop(1, #7a4376)); /* Saf4+, Chrome */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endColorstr='#538300', GradientType='1'); /* IE*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4a2e94', endColorstr='#7a4376', GradientType='1'); /* IE*/
 }
 .bg-white{background: #fff;}
 
