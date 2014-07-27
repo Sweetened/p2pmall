@@ -20,3 +20,12 @@ MongoDB
 mongodb://p2pmall:paic1234@kahana.mongohq.com:10026/p2pmall
 
 rest url : http://localhost:3000/rest/invests
+
+invets and loans search rest
+
+POST JSON parameter
+
+http://localhost:300/rest/search/:model
+
+:model -> invests or loans
+parameter -> {name:"XXX",company:"XXX",...}
