@@ -8,6 +8,7 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
         .when('/loans', {templateUrl: '/views/tpl/loan.html'})
         .when('/invests', {templateUrl: '/views/tpl/invests.html'})
         .when('/company', {templateUrl: '/views/tpl/company.html'})
+        .when('/companyDetail', {templateUrl: '/views/tpl/companyDetail.html'})
         .otherwise({redirectTo: '/home'});
 }]);
 
