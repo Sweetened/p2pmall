@@ -11,13 +11,3 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
         .when('/companyDetail', {templateUrl: '/views/tpl/companyDetail.html'})
         .otherwise({redirectTo: '/home'});
 }]);
-
-app.controller('hotController', function ($scope, $http, $location) {
-    var baseUrl = "http://" + $location.host() + ":" + $location.port();
-    $http.get(baseUrl + '/rest/invests').success(function (data) {
-        $scope.hotInvests = data;
-    });
-    $http.get(baseUrl + '/rest/loans').success(function (data) {
-        $scope.hotLoans = data;
-    });
-});

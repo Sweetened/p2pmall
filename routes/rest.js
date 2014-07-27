@@ -6,7 +6,7 @@ var config = require('../config');
 
 var db = mongojs(config.connectionstring);
 
-router.get('/:model', function (req, res) {
+router.get('/hot/:model', function (req, res) {
 
     var mycollection = db.collection(req.params.model);
 
