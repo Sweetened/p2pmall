@@ -25,34 +25,30 @@
 <div class="row">
 <div class="container-fluid">
 <div class="row invest-search-bg" style="height: 350px">
-    <div class="col-9 col-sm-9 col-lg-9 col-lg-offset-2">
+    <div class="col-9 col-sm-9 col-lg-9 col-lg-offset-2" ng-controller="investController">
         <div class="ui-filter fn-left mt50" id="invest-list-filter">
             <div class="ui-filter-header mb10">
                 <h4 class="search-white-text" >筛选投资项目</h4>
             </div>
             <ul >
                 <li>
-                    <ul class="ui-filter-category category fn-clear">
+                    <input type="hidden" ng-model="investPlatform"/>
+                    <ul class="ui-filter-category category fn-clear investPlatform">
                         <li class="ui-filter-title search-white-text">P2P平台</li>
-                        <li class="ui-filter-tag  search-gray-text  all active">
-                            <input type="checkbox" name="investPlatform" value="all" checked="checked">
-                            <span>不限</span>
+                        <li class="ui-filter-tag  search-gray-text all active">
+                            <span ng-click="checked('investPlatform','all')">不限</span>
                         </li>
-                        <li class="ui-filter-tag  search-gray-text condition ">
-                            <input type="checkbox" name="investPlatform" >
-                            <span>陆金所</span>
+                        <li class="ui-filter-tag  search-gray-text lu ">
+                            <span ng-click="checked('investPlatform','lu')">陆金所</span>
                         </li>
-                        <li class="ui-filter-tag  search-gray-text condition ">
-                            <input type="checkbox" name="investPlatform" >
-                            <span>人人贷</span>
+                        <li class="ui-filter-tag  search-gray-text ren ">
+                            <span ng-click="checked('investPlatform','ren')">人人贷</span>
                         </li>
-                        <li class="ui-filter-tag  search-gray-text condition ">
-                            <input type="checkbox" name="investPlatform" >
-                            <span>宜人贷</span>
+                        <li class="ui-filter-tag  search-gray-text yi ">
+                            <span ng-click="checked('investPlatform','yi')">宜人贷</span>
                         </li>
-                        <li class="ui-filter-tag  search-gray-text condition ">
-                            <input type="checkbox" name="investPlatform" >
-                            <span>拍拍贷</span>
+                        <li class="ui-filter-tag  search-gray-text pai ">
+                            <span ng-click="checked('investPlatform','pai')">拍拍贷</span>
                         </li>
                     </ul>
                 </li>
