@@ -53,97 +53,80 @@
                     </ul>
                 </li>
                 <li class="mt4">
-                    <ul class="ui-filter-category category fn-clear">
+                    <input type="hidden" ng-model="investAmount"/>
+                    <ul class="ui-filter-category category fn-clear investAmount">
                         <li class="ui-filter-title search-white-text">投资金额</li>
                         <li class="ui-filter-tag  search-gray-text  all active">
-                            <input type="checkbox" name="investAmount" value="all" checked="checked">
-                            <span>不限</span>
+                            <span ng-click="checked('investAmount','all')">不限</span>
                         </li>
-                        <li class="ui-filter-tag  search-gray-text condition ">
-                            <input type="checkbox" name="investAmount" >
-                            <span>1万以下</span>
+                        <li class="ui-filter-tag  search-gray-text a ">
+                            <span ng-click="checked('investAmount','a')">1万以下</span>
                         </li>
-                        <li class="ui-filter-tag  search-gray-text condition ">
-                            <input type="checkbox" name="investAmountm" >
-                            <span>1万-5万</span>
+                        <li class="ui-filter-tag  search-gray-text b ">
+                            <span ng-click="checked('investAmount','b')">1万-5万</span>
                         </li>
-                        <li class="ui-filter-tag  search-gray-text condition ">
-                            <input type="checkbox" name="investAmount" >
-                            <span>5万-10万</span>
+                        <li class="ui-filter-tag  search-gray-text c ">
+                            <span ng-click="checked('investAmount','c')">5万-10万</span>
                         </li>
-                        <li class="ui-filter-tag  search-gray-text condition ">
-                            <input type="checkbox" name="investAmount" >
-                            <span>10万-20万</span>
+                        <li class="ui-filter-tag  search-gray-text d ">
+                            <span ng-click="checked('investAmount','d')">10万-20万</span>
                         </li>
-                        <li class="ui-filter-tag  search-gray-text condition ">
-                            <input type="checkbox" name="investAmount" >
-                            <span>20万-30万</span>
+                        <li class="ui-filter-tag  search-gray-text e ">
+                            <span ng-click="checked('investAmount','e')">20万-30万</span>
                         </li>
-                        <li class="ui-filter-tag  search-gray-text condition ">
-                            <input type="checkbox" name="investAmount" >
-                            <span>30万以上</span>
+                        <li class="ui-filter-tag  search-gray-text f ">
+                            <span ng-click="checked('investAmount','f')">30万以上</span>
                         </li>
                     </ul>
                 </li>
                 <li class="mt4">
-                    <ul class="ui-filter-category category fn-clear">
+                    <input type="hidden" ng-model="investTerm"/>
+                    <ul class="ui-filter-category category fn-clear investTerm">
                         <li class="ui-filter-title search-white-text">投资期限</li>
                         <li class="ui-filter-tag  search-gray-text  all active">
-                            <input type="checkbox" name="investTerm" value="all" checked="checked">
-                            <span>不限</span>
+                            <span ng-click="checked('investTerm','all')">不限</span>
                         </li>
-                        <li class="ui-filter-tag  search-gray-text condition ">
-                            <input type="checkbox" name="investTerm" >
-                            <span>1月-3月</span>
+                        <li class="ui-filter-tag  search-gray-text a ">
+                            <span ng-click="checked('investTerm','a')">1月-3月</span>
                         </li>
-                        <li class="ui-filter-tag  search-gray-text condition ">
-                            <input type="checkbox" name="investTerm" >
-                            <span>3月-6月</span>
+                        <li class="ui-filter-tag  search-gray-text b ">
+                            <span ng-click="checked('investTerm','b')">3月-6月</span>
                         </li>
-                        <li class="ui-filter-tag  search-gray-text condition ">
-                            <input type="checkbox" name="investTerm" >
-                            <span>6月-12月</span>
+                        <li class="ui-filter-tag  search-gray-text c ">
+                            <span ng-click="checked('investTerm','c')">6月-12月</span>
                         </li>
-                        <li class="ui-filter-tag  search-gray-text condition ">
-                            <input type="checkbox" name="investTerm" >
-                            <span>12月-24月</span>
+                        <li class="ui-filter-tag  search-gray-text d ">
+                            <span ng-click="checked('investTerm','d')">12月-24月</span>
                         </li>
-                        <li class="ui-filter-tag  search-gray-text condition ">
-                            <input type="checkbox" name="investTerm" >
-                            <span>24月-48月</span>
+                        <li class="ui-filter-tag  search-gray-text e ">
+                            <span ng-click="checked('investTerm','e')">24月-48月</span>
                         </li>
-                        <li class="ui-filter-tag  search-gray-text condition ">
-                            <input type="checkbox" name="investTerm" >
-                            <span>48个月以上</span>
+                        <li class="ui-filter-tag  search-gray-text f ">
+                            <span ng-click="checked('investTerm','f')">48个月以上</span>
                         </li>
                     </ul>
                 </li>
                 <li class="mt4">
-                    <ul class="ui-filter-category category fn-clear">
+                    <input type="hidden" ng-model="investYield"/>
+                    <ul class="ui-filter-category category fn-clear investYield">
                         <li class="ui-filter-title search-white-text">期望收益</li>
                         <li class="ui-filter-tag  search-gray-text  all active">
-                            <input type="checkbox" name="investYield" value="all" checked="checked">
-                            <span>不限</span>
+                            <span ng-click="checked('investYield','c')">不限</span>
                         </li>
-                        <li class="ui-filter-tag  search-gray-text condition ">
-                            <input type="checkbox" name="investYield" >
-                            <span>5%以下</span>
+                        <li class="ui-filter-tag  search-gray-text a ">
+                            <span ng-click="checked('investYield','a')">5%以下</span>
                         </li>
-                        <li class="ui-filter-tag  search-gray-text condition ">
-                            <input type="checkbox" name="investYield" >
-                            <span>5%-8%</span>
+                        <li class="ui-filter-tag  search-gray-text b ">
+                            <span ng-click="checked('investYield','b')">5%-8%</span>
                         </li>
-                        <li class="ui-filter-tag  search-gray-text condition ">
-                            <input type="checkbox" name="investYield" >
-                            <span>8%-12%</span>
+                        <li class="ui-filter-tag  search-gray-text c ">
+                            <span ng-click="checked('investYield','c')">8%-12%</span>
                         </li>
-                        <li class="ui-filter-tag  search-gray-text condition ">
-                            <input type="checkbox" name="investYield" >
-                            <span>12%-20%</span>
+                        <li class="ui-filter-tag  search-gray-text d ">
+                            <span ng-click="checked('investYield','d')">12%-20%</span>
                         </li>
-                        <li class="ui-filter-tag  search-gray-text condition ">
-                            <input type="checkbox" name="investYield" >
-                            <span>20%以上</span>
+                        <li class="ui-filter-tag  search-gray-text e ">
+                            <span ng-click="checked('investYield','e')">20%以上</span>
                         </li>
                     </ul>
                 </li>
